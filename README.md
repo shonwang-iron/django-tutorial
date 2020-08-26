@@ -29,6 +29,8 @@
 
 ## 處理請求
 
+參考文章(https://bezkoder.com/django-rest-api/)
+
 參考文章(https://docs.djangoproject.com/en/3.1/topics/http/urls/)
 
 基本寫法
