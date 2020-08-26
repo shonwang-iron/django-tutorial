@@ -1,8 +1,8 @@
 # django-tutorial
 
-參考文章(https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c)
-
 ## 開發環境
+
+參考文章(https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c)
 
 安裝 Django
 
@@ -28,6 +28,8 @@
 
 
 ## 處理請求
+
+參考文章(https://docs.djangoproject.com/en/3.1/topics/http/urls/)
 
 基本寫法
 
