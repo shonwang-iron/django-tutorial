@@ -9,5 +9,7 @@ router.register(r'heroes', views.HeroViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api/tutorials/', views.fristAPI),
+    path('api/tutorials/<str:name>/', views.getPathParam)
 ]
