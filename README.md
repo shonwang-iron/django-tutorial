@@ -2,7 +2,7 @@
 
 參考文章(https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c)
 
-# 開發環境
+## 開發環境
 
 安裝 Django
 
@@ -25,3 +25,24 @@
 
       cd mysite
       python manage.py runserver 
+
+
+## 處理請求
+
+基本寫法
+
+      path('api/tutorials/', views.fristAPI)
+      ## 使用api_view設定請求http方式
+      @api_view(['GET', 'POST'])
+      def fristAPI(request):
+            return JsonResponse({'Msg': 'Your use method ' + request.method})
+            
+            
+UR參數寫法
+
+      ## 使用<型態:參數key>設定URL參數
+      path('api/tutorials/<str:name>/', views.getPathParam)
+      @api_view(['GET', 'POST'])
+      def getPathParam(request, *args, **kwargs):
+            ## 透過kwargs[參數key]取得URL參數
+            return JsonResponse({'Msg': 'Your request parameter ' + kwargs['name']})
